@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Đăng nhập hoặc đăng ký tài khoản P&D Cinema để đặt vé và nhận ưu đãi">
+  <meta name="keywords" content="P&D Cinema, đăng nhập, đăng ký">
+  <title>P&D Cinema - Đăng nhập/Đăng ký</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="news-offers.html">Tin mới & Ưu đãi</a></li>
+            <li><a href="#">Thuê rạp/Vé nhóm</a></li>
+            <li><a href="vip-membership.html">Thành Viên</a></li>
+            <li><a href="login.html">Đăng nhập/Đăng kí</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header-bot">
+      <div class="container">
+        <div class="header-bot-content">
+          <div class="header-bot-left">
+            <a href="index.html" class="logo"><img src="logo.png" alt="P&D Cinema Logo" loading="lazy"></a>
+          </div>
+          <div class="header-bot-center">
+            <nav>
+              <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="phim.html">Phim</a></li>
+                <li><a href="labTH.html">Lab</a></li>
+                <li><a href="login.html">Đăng nhập</a></li>
+                <li><a href="login.html">Đăng ký</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-bot-right">
+            <div class="search-bar">
+              <input type="text" id="movieSearch" placeholder="Tìm kiếm phim..." aria-label="Tìm kiếm phim">
+              <div class="search-suggestions"></div>
+            </div>
+            <button class="dark-mode-toggle" aria-label="Chuyển đổi chế độ sáng/tối">🌙</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="auth-section">
+    <div class="container">
+      <h2>ĐĂNG NHẬP</h2>
+      <div class="auth-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Nhập email" aria-label="Nhập email">
+        </div>
+        <div class="form-group">
+          <label for="password">Mật khẩu</label>
+          <input type="password" id="password" placeholder="Nhập mật khẩu" aria-label="Nhập mật khẩu">
+        </div>
+        <button class="login-button" onclick="validateLoginForm()" aria-label="Đăng nhập">Đăng nhập</button>
+        <p>Chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="chatbot">
+    <button class="chatbot-toggle" aria-label="Mở chatbot hỗ trợ">💬</button>
+    <div class="chatbot-window" style="display: none;">
+      <div class="chatbot-header">
+        <h4>P&D Cinema Bot</h4>
+        <button class="chatbot-close" aria-label="Đóng chatbot">✖</button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="bot-message">Chào bạn! Mình là P&D Cinema Bot. Hỏi mình về phim, lịch chiếu, hay ưu đãi nhé!</div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" id="chatbotInput" placeholder="Nhập câu hỏi..." aria-label="Nhập câu hỏi cho chatbot">
+        <button onclick="sendChatbotMessage()">Gửi</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <h3>P&D Cinema</h3>
+          <ul>
+            <li><a href="about.html">Về chúng tôi</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Hỗ trợ</h3>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Chính sách</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Kết nối</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">X</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="company-info">
+        <p>© 2025 P&D Cinema. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
+```
